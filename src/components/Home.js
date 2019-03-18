@@ -3,19 +3,13 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="container top">
-      <h1 className="title-text text-center">Welcome to MyPassenger</h1>
-      <h6 className="text-center list-pass mb-4">
-        To view all passengers click the button below
-      </h6>
-      <div className="row">
-        <div className="col-md-2 mx-auto">
+        <div className="container top text-center">
+          <h1 className="title-text">Welcome to MyPassenger</h1>
+          <h6 className="list-pass mb-4">To view all passengers click the button below</h6>
           <Link to="/passengers">
-          <button className="btn btn-md">Passengers</button>
+            <button className="btn btn-md">Passengers</button>
           </Link>
         </div>
-      </div>
-    </div>
   )
 
 }

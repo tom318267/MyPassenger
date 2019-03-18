@@ -1,16 +1,24 @@
+
 :root {
   --mainBlue: #21A1B2;
   --mainWhite: #ffffff;
   --mainGrey: #f3f3f3;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--mainGrey) !important;
+  overflow-x: hidden;
+
 }
 
 
 nav {
   background: var(--mainBlue) !important;
+  width: 100%;
 }
 
 .brand {
@@ -95,8 +103,22 @@ i {
 }
 
 .field-error {
-  color: #921e2a;
+  color: red;
   font-style: italic;
   font-size: 12px;
   text-align: right !important;
+}
+
+@media only screen and (max-width: 425px) {
+  .title-text {
+    font-size: 3rem;
+  }
+
+  .list-pass {
+    font-size: 1.2rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
 }
