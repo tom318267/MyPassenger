@@ -1,33 +1,102 @@
-.App {
-  text-align: center;
+:root {
+  --mainBlue: #21A1B2;
+  --mainWhite: #ffffff;
+  --mainGrey: #f3f3f3;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: var(--mainGrey) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+nav {
+  background: var(--mainBlue) !important;
+}
+
+.brand {
+  color: var(--mainWhite) !important;
+  font-size: 1.2em;
+  list-style: none;
+  text-shadow: 1px 1px black;
+
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: var(--mainWhite) !important;
+  text-shadow: 1px 1px black;
+}
+
+.title-text, .list-pass, nav, button {
+  font-family: 'Baloo Chettan', cursive!important;
+}
+
+
+.title-text {
+  font-size: 4rem;
+
+}
+
+.list-pass {
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 1.5rem;
+}
+
+.top {
+  margin-top: 15rem;
+}
+
+button {
+  background: var(--mainBlue) !important;
+  color: var(--mainWhite) !important;
+  font-size: 1.2rem !important;
+  box-shadow: 1px 1px 2px black;
+}
+
+i {
+  cursor: pointer;
+}
+
+.fa-edit {
+  color: purple;
+}
+
+.fa-trash-alt {
+  color: black;
+}
+
+.fa-external-link-alt {
+  color: blue;
+}
+
+.fa-spinner {
+  margin-top: 12rem;
+  color: var(--mainBlue);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-detail {
+  height: 220px;
+  border-left: 20px solid var(--mainBlue) !important;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.35);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-form {
+  display: flex !important;
+}
+
+.form {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.35);
+  height: 270px;
+}
+
+.field-error {
+  color: #921e2a;
+  font-style: italic;
+  font-size: 12px;
+  text-align: right !important;
 }
